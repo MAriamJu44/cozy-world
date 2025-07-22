@@ -6,10 +6,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-top: 80px; /* مسافة من الأعلى لتعويض شريط التنقل الثابت */
+  padding-top: 80px; 
 }
 
-/* ✅ شريط التنقل (Navigation Bar) */
 nav {
   position: fixed;
   top: 0;
@@ -18,7 +17,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 10px; /* مسافة أقل بين الروابط للجوال */
-  background-color: rgba(244, 237, 228, 0.95); /* خلفية شبه شفافة */
+  background-color: rgba(216, 191, 159, 0.95); /* خلفية شبه شفافة */
   padding: 10px 5px; /* padding أقل للجوال */
   border-radius: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -46,17 +45,16 @@ nav a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* ✅ الهيدر الافتراضي (لصفحة index.html - تنسيق الجوال) */
 header {
   background-color: rgba(106, 127, 70, 0.2);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   padding: 20px;
-  min-height: 400px; /* ارتفاع أدنى أقل للجوال */
+  min-height: 400px; 
   display: flex;
-  flex-direction: column; /* عمودي على الجوال */
+  flex-direction: column; 
   align-items: center;
-  justify-content: center; /* توسيط المحتوى عمودياً */
+  justify-content: center; 
   text-align: center;
 }
 
