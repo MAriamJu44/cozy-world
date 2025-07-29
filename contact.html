@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body class="contact-page">
-    <nav>
-      <a href="index.html#home" class="navh">Home</a>
-      <a href="index.html#menu" class="navh">Menu</a>
-      <a href="index.html#cozycorner" class="navh">CozyCorner</a>
-      <a href="index.html#ourstory" class="navh">Our Story</a>
-      <a href="contact.html" class="navh">Contact</a>
-    </nav>
-
-    <header>
-      <div class="logo-title-container">
-        <h1 class="site-title">CozyWorld</h1>
-        <div class="logo">
-          <img src="images/logo.png" alt="CozyWorld café logo" />
+    <header id="home">
+      <nav>
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/logo.png"
+            alt="CozyWorld cafe logo"
+            class="nav-logo"
+          />
+          <p>Cozy World</p>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#home" class="navh">Home</a>
+          <a href="index.html#menu" class="navh">Menu</a>
+          <a href="index.html#cozy-corner" class="navh">Cozy Corner </a>
+          <a href="index.html#our-story" class="navh">Our Story</a>
+          <a href="contact.html" class="navh">Contact</a>
         </div>
-      </div>
+      </nav>
     </header>
-
     <main>
       <section class="intro-contact">
         <h2>Let’s Stay in Touch</h2>
@@ -33,27 +35,49 @@
         </p>
       </section>
 
-      <section class="contact-form">
-        <h3>Send Us a Message</h3>
-        <form
-          action="mailto: mariamjumaa447@email.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+      <section class="contact-info-and-form">
+        <div class="contact-form-wrapper">
+          <h3>Send Us a Message</h3>
+          <form
+            action="mailto: mariamjumaa447@email.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit">Send</button>
-          <p class="thanks">
-            We’ll get back to you within 24 hours. Thank you for reaching out!
-          </p>
-        </form>
+            <button type="submit">Send</button>
+            <p class="thanks">
+              We’ll get back to you within 24 hours. Thank you for reaching out!
+            </p>
+          </form>
+        </div>
+        <div class="visit-us-and-additional-info">
+          <h3>Visit Us</h3>
+          <ul class="opening-hours">
+            <li><strong>📍 Location:</strong> Lattakia, Syria</li>
+            <li><strong>🕒 Weekdays:</strong> 8:00 AM - 9:00 PM</li>
+            <li><strong>🕯️ Weekends:</strong> 9:00 AM - 10:00 PM</li>
+          </ul>
+
+          <div class="additional-contact-details">
+            <p>
+              <a href="contact.html" class="contact-page-link"
+                >Go to Contact Page</a
+              >
+            </p>
+            <p>
+              Email: <a href="mailto:info@cozyworld.com">info@cozyworld.com</a>
+            </p>
+            <p>Phone: <a href="tel:963956702536">+963 956702536</a></p>
+          </div>
+        </div>
       </section>
 
       <section class="whatsapp-contact">
@@ -83,8 +107,8 @@
       </section>
     </main>
 
-    <footer>
-      <p>© 2025 CozyWorld — Warmth always included.</p>
+    <footer >
+      <p class="rights">© 2025 CozyWorld — Warmth always included.</p>
     </footer>
   </body>
 </html>
