@@ -1,0 +1,15 @@
+name: build and deploy
+
+on:
+  push:
+    branches: 
+     - main
+     
+jobs:
+  bulid:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: checkout code
+        uses: actions/checkcout@v3  
+       
